@@ -26,7 +26,7 @@ public class ConexaoAuto  {
 	
 	private static Properties getProperties() throws IOException {
 		Properties prop = new Properties();
-		InputStream stream = new FileInputStream("C:\\Users\\Dell\\Documents\\VSCode\\Java\\conexao.properties");
+		InputStream stream = new FileInputStream("/home/lobachaos/git/JavaTest/conexao.properties");
 		prop.load(stream);
 		return prop;
 	}

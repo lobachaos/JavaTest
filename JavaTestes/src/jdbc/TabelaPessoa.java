@@ -8,7 +8,7 @@ public class TabelaPessoa  {
 	public static void main(String[] args)throws SQLException {
 		Connection conexao = ConexaoAuto.getConexao();
 		String sql = "CREATE TABLE pessoas("
-				+ "codigo INT AUTO_INCREMENT PRIMARY KEY,"
+				+ "codigo SERIAL PRIMARY KEY,"
 				+ "nome VARCHAR(80) NOT NULL"
 				+ ")";
 		
