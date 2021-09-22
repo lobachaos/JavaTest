@@ -8,8 +8,10 @@ public class Pessoa {
 		setPeso(peso);
 	}
 
-	public void comer(Comida food) {
-		this.peso += food.getPeso();
+	public void comer(Comida... foods) {
+		for(Comida c: foods) {
+			this.peso += c.getPeso();
+		}
 	}
 
 	public double getPeso() {
