@@ -7,7 +7,7 @@ import java.util.function.Consumer;
 public class Consumidor {
 	public static void main(String[] args) {
 		
-		Consumer<Produto> imprimir = product -> System.out.println(product.nome);
+		Consumer<Produto> imprimir = product -> System.out.println(product.getNome());
 		
 		Produto p1 = new Produto("Caneta", 1.50);
 		imprimir.accept(p1);

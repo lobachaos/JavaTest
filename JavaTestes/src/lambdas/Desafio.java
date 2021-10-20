@@ -21,7 +21,7 @@ public class Desafio {
 		UnaryOperator<Double> aplicarFrete = valorProduto -> valorProduto >= 3000 ? valorProduto + 100.0
 				: valorProduto + 50.0;
 
-		System.out.printf("R$: %.2f", aplicarImposto.andThen(aplicarFrete).apply(p1.preco, 0.085));
+		System.out.printf("R$: %.2f", aplicarImposto.andThen(aplicarFrete).apply(p1.getPreco(), 0.085));
 
 	}
 
