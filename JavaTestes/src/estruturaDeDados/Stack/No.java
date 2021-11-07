@@ -1,4 +1,4 @@
-package estruturaDeDados;
+package estruturaDeDados.Stack;
 
 public class No<T> {
     private T conteudo;

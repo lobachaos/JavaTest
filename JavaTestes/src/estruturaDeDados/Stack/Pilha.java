@@ -1,4 +1,4 @@
-package estruturaDeDados;
+package estruturaDeDados.Stack;
 
 public class Pilha {
     private No refNo;
@@ -40,7 +40,7 @@ public class Pilha {
       String stringRetorno = "";
         while(true){
             if(noPrint != null){
-                stringRetorno += noPrint.getConteudo() + " , ";
+                stringRetorno += noPrint.getConteudo() + " ";
                 noPrint = noPrint.getProximoNo();
             }
             else{
