@@ -34,6 +34,19 @@ public class Pilha {
         refNo = refNo.getProximoNo();
     }
 
-
-
+    @Override
+    public String toString() {
+        No noPrint = refNo;
+      String stringRetorno = "";
+        while(true){
+            if(noPrint != null){
+                stringRetorno += noPrint.getConteudo() + " , ";
+                noPrint = noPrint.getProximoNo();
+            }
+            else{
+                break;
+            }
+        }
+        return stringRetorno;
+    }
 }
